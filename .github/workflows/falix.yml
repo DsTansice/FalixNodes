@@ -97,7 +97,7 @@ jobs:
           # 创建/更新一个保活记录文件
           cat > .keepalive << EOF
           last_run: $(date -u +%Y-%m-%d_%H:%M:%S)_UTC
-          next_cron: $(grep -oP "(?<=- cron: ')[^']+" .github/workflows/Weirdhost_renew.yml)
+          next_cron: $(grep -oP "(?<=- cron: ')[^']+" .github/workflows/falix.yml)
           EOF
           
           git config user.name "github-actions[bot]"
